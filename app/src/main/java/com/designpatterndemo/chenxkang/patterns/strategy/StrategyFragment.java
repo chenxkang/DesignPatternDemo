@@ -1,4 +1,4 @@
-package com.designpatterndemo.chenxkang.patterns.state;
+package com.designpatterndemo.chenxkang.patterns.strategy;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -13,12 +13,12 @@ import butterknife.BindView;
 /**
  * author: chenxkang
  * time  : 17/5/4
- * desc  : 状态模式
+ * desc  : 策略模式
  */
 
-public class StateFragment extends BaseFragment {
+public class StrategyFragment extends BaseFragment {
 
-    public static final String STATE_TAG = "STATE_TAG";
+    public static final String STRATEGY_TAG = "STRATEGY_TAG";
 
     @BindView(R.id.pattern_tv)
     TextView patternTv;
@@ -32,14 +32,7 @@ public class StateFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("状态模式");
-
-        Account account = new Account("小明",0.0);
-        account.deposit(1000);
-        account.withdraw(2000);
-        account.deposit(3000);
-        account.withdraw(4000);
-        account.withdraw(1000);
-        account.computeInterest();
+        patternTv.setText("策略模式");
     }
+
 }

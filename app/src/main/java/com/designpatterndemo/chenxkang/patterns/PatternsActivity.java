@@ -25,6 +25,8 @@ import com.designpatterndemo.chenxkang.patterns.proxy.ProxyFragment;
 import com.designpatterndemo.chenxkang.patterns.simple_factory.SimpleFactoryFragment;
 import com.designpatterndemo.chenxkang.patterns.singleton.SingletonFragment;
 import com.designpatterndemo.chenxkang.patterns.state.StateFragment;
+import com.designpatterndemo.chenxkang.patterns.template_method.TemplateFragment;
+import com.designpatterndemo.chenxkang.patterns.visitor.VisitorFragment;
 import com.designpatterndemo.chenxkang.utils.FragmentUtils;
 import com.designpatterndemo.chenxkang.utils.StringUtils;
 import com.designpatterndemo.chenxkang.utils.Title;
@@ -168,10 +170,16 @@ public class PatternsActivity extends BaseActivity {
                 FragmentUtils.switchFragment(getFragmentManager(), new StateFragment());
                 break;
             case STR_PATTERN_STRATEGY:// 策略模式
+                Title.setTitle(this, "策略模式");
+                FragmentUtils.switchFragment(getFragmentManager(), new StateFragment());
                 break;
             case STR_PATTERN_TEMPLATE_METHOD:// 模板方法模式
+                Title.setTitle(this, "模板方法模式");
+                FragmentUtils.switchFragment(getFragmentManager(), new TemplateFragment());
                 break;
             case STR_PATTERN_VISITOR:// 访问者模式
+                Title.setTitle(this, "访问者模式");
+                FragmentUtils.switchFragment(getFragmentManager(), new VisitorFragment());
                 break;
         }
     }
