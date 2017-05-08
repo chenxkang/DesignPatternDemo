@@ -24,6 +24,7 @@ public class Account {
         Log.i(STATE_TAG, "-----------------------------");
     }
 
+    // 存款
     public void deposit(double amount){
         Log.i(STATE_TAG, owner + "存款: " + amount);
         state.deposit(amount);
@@ -32,6 +33,7 @@ public class Account {
         Log.i(STATE_TAG, "-----------------------------");
     }
 
+    // 取款
     public void withdraw(double amount){
         Log.i(STATE_TAG, owner + "取款: " + amount);
         state.withdraw(amount);
@@ -43,19 +45,15 @@ public class Account {
     public void computeInterest(){
         state.computeInterest();
     }
-
     public AccountState getState() {
         return state;
     }
-
     public void setState(AccountState state) {
         this.state = state;
     }
-
     public double getBalance() {
         return balance;
     }
-
     public void setBalance(double balance) {
         this.balance = balance;
     }

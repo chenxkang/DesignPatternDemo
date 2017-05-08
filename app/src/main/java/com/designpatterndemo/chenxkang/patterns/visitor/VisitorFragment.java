@@ -33,6 +33,22 @@ public class VisitorFragment extends BaseFragment {
         super.onViewCreated(view, savedInstanceState);
 
         patternTv.setText("访问者模式");
+
+        EmployeeList employees = new EmployeeList();
+        employees.addEmployee(new FulltimeEmployee("张小明", 10000));
+        employees.addEmployee(new ParttimeEmployee("李小红", 4000));
+        employees.addEmployee(new FulltimeEmployee("王思", 6000));
+        employees.addEmployee(new ParttimeEmployee("二狗子", 7000));
+        employees.addEmployee(new FulltimeEmployee("陈奕", 8000));
+        employees.addEmployee(new ParttimeEmployee("赵云", 5000));
+        employees.addEmployee(new FulltimeEmployee("钱三顺", 7500));
+        employees.addEmployee(new ParttimeEmployee("孙公策", 9600));
+
+        Department department;
+
+        department = new HRDepartment();
+        employees.accept(department);
+
     }
 
 }

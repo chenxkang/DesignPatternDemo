@@ -37,7 +37,7 @@ public class Constants {
     public static final String STR_PATTERN_FLYWEIGHT = "FLYWEIGHT";// 享元模式
     public static final String STR_PATTERN_PROXY = "PROXY";// 代理模式
 
-    // 十一个行为型模式
+    // 九个行为型模式
     public static final String STR_PATTERN_CHAIN_OF_RESPONSIBILITY = "COR";// 责任链模式
     public static final String STR_PATTERN_COMMAND = "COMMAND";// 命令模式
     public static final String STR_PATTERN_ITERATOR = "ITERATOR";// 迭代器模式
@@ -46,7 +46,6 @@ public class Constants {
     public static final String STR_PATTERN_OBSERVER = "OBSERVER";// 观察者模式
     public static final String STR_PATTERN_STATE = "STATE";// 状态模式
     public static final String STR_PATTERN_STRATEGY = "STRATEGY";// 策略模式
-    public static final String STR_PATTERN_TEMPLATE_METHOD = "TMP";// 模板方法模式
     public static final String STR_PATTERN_VISITOR = "VISITOR";// 访问者模式
 
 }

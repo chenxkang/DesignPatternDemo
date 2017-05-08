@@ -25,7 +25,7 @@ import com.designpatterndemo.chenxkang.patterns.proxy.ProxyFragment;
 import com.designpatterndemo.chenxkang.patterns.simple_factory.SimpleFactoryFragment;
 import com.designpatterndemo.chenxkang.patterns.singleton.SingletonFragment;
 import com.designpatterndemo.chenxkang.patterns.state.StateFragment;
-import com.designpatterndemo.chenxkang.patterns.template_method.TemplateFragment;
+import com.designpatterndemo.chenxkang.patterns.strategy.StrategyFragment;
 import com.designpatterndemo.chenxkang.patterns.visitor.VisitorFragment;
 import com.designpatterndemo.chenxkang.utils.FragmentUtils;
 import com.designpatterndemo.chenxkang.utils.StringUtils;
@@ -53,7 +53,6 @@ import static com.designpatterndemo.chenxkang.Constants.STR_PATTERN_SIMPLE_FACTO
 import static com.designpatterndemo.chenxkang.Constants.STR_PATTERN_SINGLETON;
 import static com.designpatterndemo.chenxkang.Constants.STR_PATTERN_STATE;
 import static com.designpatterndemo.chenxkang.Constants.STR_PATTERN_STRATEGY;
-import static com.designpatterndemo.chenxkang.Constants.STR_PATTERN_TEMPLATE_METHOD;
 import static com.designpatterndemo.chenxkang.Constants.STR_PATTERN_VISITOR;
 
 /**
@@ -171,11 +170,7 @@ public class PatternsActivity extends BaseActivity {
                 break;
             case STR_PATTERN_STRATEGY:// 策略模式
                 Title.setTitle(this, "策略模式");
-                FragmentUtils.switchFragment(getFragmentManager(), new StateFragment());
-                break;
-            case STR_PATTERN_TEMPLATE_METHOD:// 模板方法模式
-                Title.setTitle(this, "模板方法模式");
-                FragmentUtils.switchFragment(getFragmentManager(), new TemplateFragment());
+                FragmentUtils.switchFragment(getFragmentManager(), new StrategyFragment());
                 break;
             case STR_PATTERN_VISITOR:// 访问者模式
                 Title.setTitle(this, "访问者模式");

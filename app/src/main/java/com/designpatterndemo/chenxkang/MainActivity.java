@@ -41,7 +41,6 @@ import static com.designpatterndemo.chenxkang.Constants.STR_PATTERN_SIMPLE_FACTO
 import static com.designpatterndemo.chenxkang.Constants.STR_PATTERN_SINGLETON;
 import static com.designpatterndemo.chenxkang.Constants.STR_PATTERN_STATE;
 import static com.designpatterndemo.chenxkang.Constants.STR_PATTERN_STRATEGY;
-import static com.designpatterndemo.chenxkang.Constants.STR_PATTERN_TEMPLATE_METHOD;
 import static com.designpatterndemo.chenxkang.Constants.STR_PATTERN_VISITOR;
 import static com.designpatterndemo.chenxkang.Constants.STR_PRINCIPLE_DIP;
 import static com.designpatterndemo.chenxkang.Constants.STR_PRINCIPLE_ISP;
@@ -171,10 +170,6 @@ public class MainActivity extends BaseActivity {
                         bundle.putString(KEY_PATTERN, STR_PATTERN_STRATEGY);
                         IntentUtils.sendDataIntent(MainActivity.this,PatternsActivity.class,bundle);
                         break;
-                    case "模版方法模式":
-                        bundle.putString(KEY_PATTERN, STR_PATTERN_TEMPLATE_METHOD);
-                        IntentUtils.sendDataIntent(MainActivity.this,PatternsActivity.class,bundle);
-                        break;
                     case "观察者模式":
                         bundle.putString(KEY_PATTERN, STR_PATTERN_OBSERVER);
                         IntentUtils.sendDataIntent(MainActivity.this,PatternsActivity.class,bundle);
@@ -236,7 +231,6 @@ public class MainActivity extends BaseActivity {
         datas.add(new ItemEntity("组合模式"));
         datas.add(new ItemEntity("享元模式"));
         datas.add(new ItemEntity("策略模式"));
-        datas.add(new ItemEntity("模版方法模式"));
         datas.add(new ItemEntity("观察者模式"));
         datas.add(new ItemEntity("迭代子模式"));
         datas.add(new ItemEntity("责任链模式"));
