@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.builder;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -36,7 +37,8 @@ public class BuilderFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("建造者模式");
+        patternTv.setText(R.string.BUILDER);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         // 套餐A
         Log.i(BUILDER_TAG, "套餐A详情：");

@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.observer;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -33,7 +34,8 @@ public class ObserverFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("观察者模式");
+        patternTv.setText(R.string.OBSERVER);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         Subject subject = new ConcreteSubject();
         Observer observer2 = new Power2Observer();

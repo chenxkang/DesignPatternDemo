@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.flyweight;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -33,7 +34,8 @@ public class FlyweightFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("享元模式");
+        patternTv.setText(R.string.FLYWEIGHT);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         Chessman black01,black02,black03,white01,white02;
         ChessmanFactory factory = new ChessmanFactory();

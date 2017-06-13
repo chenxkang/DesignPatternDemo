@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.iterator;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -33,7 +34,8 @@ public class IteratorFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("迭代器模式");
+        patternTv.setText(R.string.ITERATOR);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         ConcreteAggregate aggregate = new ConcreteAggregate();
         aggregate.addObject(new Picture(0, "zero"));

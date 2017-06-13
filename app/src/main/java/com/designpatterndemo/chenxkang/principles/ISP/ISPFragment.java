@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.principles.ISP;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -51,7 +52,8 @@ public class ISPFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        principleTv.setText("接口隔离原则");
+        principleTv.setText(R.string.isp);
+        principleTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         // 富人使用手机 发送短信、拨打电话、听音乐和看视频
         Log.i(ISP_TAG, "富人 使用手机 发送短信、拨打电话、听音乐和看视频");

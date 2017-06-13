@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.principles.LSP;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -58,7 +59,8 @@ public class LSPFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        principleTv.setText("依赖倒置原则");
+        principleTv.setText(R.string.lsp);
+        principleTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         Soldier soldier = new Soldier();
 

@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.decorator;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -35,7 +36,8 @@ public class DecoratorFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("装饰者模式");
+        patternTv.setText(R.string.DECORATOR);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         // 白色花瓶，无任何装饰
         FlowerVase flowerVase = new FlowerVase();

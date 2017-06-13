@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.principles.LOD;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -53,7 +54,8 @@ public class LODFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        principleTv.setText("迪米特法则");
+        principleTv.setText(R.string.lod);
+        principleTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         // 优化前 打印所有成员ID
         CompanyManager companyManager = new CompanyManager();

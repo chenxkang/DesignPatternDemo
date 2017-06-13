@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.proxy;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -35,7 +36,8 @@ public class ProxyFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("代理模式");
+        patternTv.setText(R.string.PROXY);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         BuyTickets tickets;
 

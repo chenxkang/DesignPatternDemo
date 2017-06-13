@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.chain_of_responsibility;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -33,7 +34,8 @@ public class ResponChainFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("责任链模式");
+        patternTv.setText(R.string.COR);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         // 责任链：系统->组长->主管->总监->经理
         ChainHandler systemHandler = new SystemHandler();

@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.principles.OCP;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -55,7 +56,8 @@ public class OCPFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        principleTv.setText("开闭原则");
+        principleTv.setText(R.string.ocp);
+        principleTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         Manager manager = new Manager();
         manager.nameWorker(new Worker(), 666);

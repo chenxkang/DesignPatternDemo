@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">设计模式</string>
+
+    <!--设计原则-->
+    <string name="srp"><a href="http://www.cnblogs.com/chenxkang/p/6657101.html">单一职责原则</a></string>
+    <string name="lsp"><a href="http://www.cnblogs.com/chenxkang/p/6657384.html">里氏替换原则</a></string>
+    <string name="dip"><a href="http://www.cnblogs.com/chenxkang/p/6657744.html">依赖倒置原则</a></string>
+    <string name="isp"><a href="http://www.cnblogs.com/chenxkang/p/6667993.html">接口隔离原则</a></string>
+    <string name="lod"><a href="http://www.cnblogs.com/chenxkang/p/6668946.html">迪米特法则</a></string>
+    <string name="ocp"><a href="http://www.cnblogs.com/chenxkang/p/6669382.html">开闭原则</a></string>
+
+    <!--设计模式-->
+    <string name="SFP"><a href="http://www.cnblogs.com/chenxkang/p/6679957.html">简单工厂模式</a></string>
+    <string name="FMP"><a href="http://www.cnblogs.com/chenxkang/p/6689631.html">工厂方法模式</a></string>
+    <string name="AFP"><a href="http://www.cnblogs.com/chenxkang/p/6691053.html">抽象工厂模式</a></string>
+    <string name="SINGLETON"><a href="http://www.cnblogs.com/chenxkang/p/6695424.html">单例模式</a></string>
+    <string name="PROTOTYPE"><a href="http://www.cnblogs.com/chenxkang/p/6696228.html">原型模式</a></string>
+    <string name="BUILDER"><a href="http://www.cnblogs.com/chenxkang/p/6725160.html">建造者模式</a></string>
+    <string name="ADAPTER"><a href="http://www.cnblogs.com/chenxkang/p/6729252.html">适配器模式</a></string>
+    <string name="BRIDGE"><a href="http://www.cnblogs.com/chenxkang/p/6734706.html">桥接模式</a></string>
+    <string name="COMPOSITE"><a href="http://www.cnblogs.com/chenxkang/p/6756541.html">组合模式</a></string>
+    <string name="DECORATOR"><a href="http://www.cnblogs.com/chenxkang/p/6758427.html">装饰模式</a></string>
+    <string name="FACADE"><a href="http://www.cnblogs.com/chenxkang/p/6762713.html">外观模式</a></string>
+    <string name="FLYWEIGHT"><a href="http://www.cnblogs.com/chenxkang/p/6764408.html">享元模式</a></string>
+    <string name="PROXY"><a href="http://www.cnblogs.com/chenxkang/p/6769782.html">代理模式</a></string>
+    <string name="COR"><a href="http://www.cnblogs.com/chenxkang/p/6774332.html">责任链模式</a></string>
+    <string name="COMMAND"><a href="http://www.cnblogs.com/chenxkang/p/6776347.html">命令模式</a></string>
+    <string name="ITERATOR"><a href="http://www.cnblogs.com/chenxkang/p/6782089.html">迭代器模式</a></string>
+    <string name="MEDIATOR"><a href="http://www.cnblogs.com/chenxkang/p/6796268.html">中介者模式</a></string>
+    <string name="MEMENTO"><a href="http://www.cnblogs.com/chenxkang/p/6798450.html">备忘录模式</a></string>
+    <string name="OBSERVER"><a href="http://www.cnblogs.com/chenxkang/p/6807364.html">观察者模式</a></string>
+    <string name="STATE"><a href="http://www.cnblogs.com/chenxkang/p/6812602.html">状态模式</a></string>
+    <string name="STRATEGY"><a href="http://www.cnblogs.com/chenxkang/p/6813408.html">策略模式</a></string>
+
 </resources>

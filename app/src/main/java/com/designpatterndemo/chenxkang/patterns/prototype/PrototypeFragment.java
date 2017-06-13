@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.prototype;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -37,7 +38,8 @@ public class PrototypeFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("原型模式");
+        patternTv.setText(R.string.PROTOTYPE);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         // －－－－－－－－－－浅克隆－－－－－－－－－－－－
 

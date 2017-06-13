@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.strategy;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -33,7 +34,8 @@ public class StrategyFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("策略模式");
+        patternTv.setText(R.string.STRATEGY);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         MovieTicket ticket = new MovieTicket();
         double originalPrice = 60.0;

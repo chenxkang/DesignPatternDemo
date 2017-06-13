@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.factory_method;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -36,7 +37,8 @@ public class FactoryMethodFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("工厂方法模式");
+        patternTv.setText(R.string.FMP);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         DogFactory dogFactory = new DogFactory();
         Dog dog = (Dog) dogFactory.getAnimal();

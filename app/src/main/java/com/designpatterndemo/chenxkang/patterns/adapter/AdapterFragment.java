@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.adapter;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -35,7 +36,8 @@ public class AdapterFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("适配器模式");
+        patternTv.setText(R.string.ADAPTER);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         // 现有功能：播放mp3格式的文件
         MediaPlayer mediaPlayer = new MediaPlayer();

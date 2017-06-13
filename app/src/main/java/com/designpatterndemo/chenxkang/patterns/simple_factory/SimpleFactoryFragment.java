@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.simple_factory;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -34,7 +35,8 @@ public class SimpleFactoryFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("简单工厂模式");
+        patternTv.setText(R.string.SFP);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         AnimalFactory factory = new AnimalFactory();
 

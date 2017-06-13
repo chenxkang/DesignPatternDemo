@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.state;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -32,7 +33,8 @@ public class StateFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("状态模式");
+        patternTv.setText(R.string.STATE);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         Account account = new Account("小明",0.0);
         account.deposit(1000);

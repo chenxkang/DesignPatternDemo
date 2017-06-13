@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.command;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -33,7 +34,8 @@ public class CommandFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view,savedInstanceState);
 
-        patternTv.setText("命令模式");
+        patternTv.setText(R.string.COMMAND);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         TvReceiver receiver = new TvReceiver();
         ControllerInvoker invoker = new ControllerInvoker();

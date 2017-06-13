@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.composite;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -37,7 +38,8 @@ public class CompositeFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("组合模式");
+        patternTv.setText(R.string.COMPOSITE);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         // 总公司
         Company headOffice = new HeadOffice("北京总公司");

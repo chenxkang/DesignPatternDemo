@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.abstract_factory;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -34,7 +35,8 @@ public class AbstractFactoryFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("抽象工厂模式");
+        patternTv.setText(R.string.AFP);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         BlackAnimalFactory blackAnimalFactory = new BlackAnimalFactory();
         blackAnimalFactory.keepDog();

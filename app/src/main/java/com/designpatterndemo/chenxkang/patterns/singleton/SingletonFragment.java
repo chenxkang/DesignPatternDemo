@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.patterns.singleton;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -34,7 +35,8 @@ public class SingletonFragment extends BaseFragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        patternTv.setText("单例模式");
+        patternTv.setText(R.string.SINGLETON);
+        patternTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         HungrySingleton.getInstance();
         IDHSingleton.getInstance();

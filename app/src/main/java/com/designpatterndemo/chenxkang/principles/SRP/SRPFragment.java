@@ -2,6 +2,7 @@ package com.designpatterndemo.chenxkang.principles.SRP;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.TextView;
 
@@ -47,7 +48,8 @@ public class SRPFragment extends BaseFragment{
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        principleTv.setText("单一职责原则");
+        principleTv.setText(R.string.srp);
+        principleTv.setMovementMethod(LinkMovementMethod.getInstance());
 
         Recommend recommend = new Recommend();
         recommend.rede("牛");
